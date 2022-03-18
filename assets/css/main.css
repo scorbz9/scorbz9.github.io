@@ -3134,7 +3134,7 @@ input, select, textarea {
 
 	#header #header-profile-picture {
 		height: 200px;
-		width: 200px;
+		/* width: 200px; */
 		border-radius: 50%;
 	}
 
