@@ -2951,12 +2951,16 @@ input, select, textarea {
 		align-items: center;
 		justify-content: space-between;
 		height: 100%;
-		width: 50vw;
+		width: 60vw;
 		margin: 0 auto;
 	}
 
+	#header-info-container {
+		display: flex;
+		flex-direction: column;
+	}
 
-	.header-profile-picture-container {
+	#header-profile-picture-container {
 		position: relative;
 		display: flex;
 		justify-content: center;
@@ -3049,10 +3053,6 @@ input, select, textarea {
 					background-color: rgba(255, 255, 255, 0.25) !important;
 				}
 
-		#header ul.major-icons li .icon {
-			border-color: #ffffff;
-		}
-
 		#header .icon.major {
 			color: #ffffff;
 		}
@@ -3063,7 +3063,6 @@ input, select, textarea {
 
 		#header .links-container {
 			display: inline-block;
-			margin-left: 8px;
 		}
 
 		#header .links-container a {
@@ -3074,6 +3073,8 @@ input, select, textarea {
 
 		#header h1 {
 			margin: 0;
+			font-size: 5.5rem;
+			width: 445px;
 		}
 
 		#header p {
@@ -3084,17 +3085,18 @@ input, select, textarea {
 			-moz-justify-content: center;
 			-webkit-justify-content: center;
 			-ms-justify-content: center;
-			justify-content: center;
-			margin-top: 2.5em;
+			justify-content: space-between;
+			margin-top: 3em;
 			margin-left: 0;
 			position: relative;
+			width: 50%;
 		}
 
 			#header .actions li:first-child {
 				padding-left: 0;
 			}
 
-		#header .inner {
+		#header .inner #header-info-container {
 			-moz-transition: -moz-transform 1.5s ease, opacity 2s ease;
 			-webkit-transition: -webkit-transform 1.5s ease, opacity 2s ease;
 			-ms-transition: -ms-transform 1.5s ease, opacity 2s ease;
@@ -3112,15 +3114,33 @@ input, select, textarea {
 			z-index: 1;
 		}
 
+			#header .inner #header-profile-picture-container {
+				-moz-transition: -moz-transform 1.5s ease, opacity 2s ease;
+				-webkit-transition: -webkit-transform 1.5s ease, opacity 2s ease;
+				-ms-transition: -ms-transform 1.5s ease, opacity 2s ease;
+				transition: transform 1.5s ease, opacity 2s ease;
+				-moz-transition-delay: 1s;
+				-webkit-transition-delay: 1s;
+				-ms-transition-delay: 1s;
+				transition-delay: 1s;
+				-moz-transform: scale(1);
+				-webkit-transform: scale(1);
+				-ms-transform: scale(1);
+				transform: scale(1);
+				opacity: 1;
+				position: relative;
+				z-index: 1;
+			}
+
 			#header .inner .actions {
 				-moz-transition: -moz-transform 1.25s ease;
 				-webkit-transition: -webkit-transform 1.25s ease;
 				-ms-transition: -ms-transform 1.25s ease;
 				transition: transform 1.25s ease;
-				-moz-transition-delay: 1s;
-				-webkit-transition-delay: 1s;
-				-ms-transition-delay: 1s;
-				transition-delay: 1s;
+				-moz-transition-delay: 1.25s;
+				-webkit-transition-delay: 1.25s;
+				-ms-transition-delay: 1.25s;
+				transition-delay: 1.25s;
 				-moz-transform: translateY(0);
 				-webkit-transform: translateY(0);
 				-ms-transform: translateY(0);
@@ -3143,13 +3163,21 @@ input, select, textarea {
 			width: 100%;
 		}
 
-	body.is-preload #header .inner {
+	body.is-preload #header .inner #header-info-container {
 		-moz-transform: scale(1.05);
 		-webkit-transform: scale(1.05);
 		-ms-transform: scale(1.05);
 		transform: scale(1.05);
 		opacity: 0;
 	}
+
+		body.is-preload #header .inner #header-profile-picture-container {
+			-moz-transform: scale(1.05);
+			-webkit-transform: scale(1.05);
+			-ms-transform: scale(1.05);
+			transform: scale(1.05);
+			opacity: 0;
+		}
 
 		body.is-preload #header .inner .actions {
 			-moz-transform: translateY(30em);
