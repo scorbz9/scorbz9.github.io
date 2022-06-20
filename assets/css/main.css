@@ -7,6 +7,11 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+:root {
+	--main-black: rgba(17,17,17,255);
+	--main-red: #731010;
+}
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -2934,16 +2939,42 @@ input, select, textarea {
 
 	#header {
 		padding: 9em 0 9em 0 ;
-		background-color: #4686a0;
 		color: rgba(255, 255, 255, 0.75);
-		background-attachment: fixed,							fixed,							fixed;
-		background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(45deg, #292e33 5%, #292e33 30%, #e9304b);
-		background-position: top left,						center center,					center center;
-		background-size: auto,							cover,							cover;
+		background-image: linear-gradient(90deg, var(--main-black) 65%, var(--main-red) 37%);
 		overflow: hidden;
 		position: relative;
-		text-align: center;
-		/* height: 490px; */
+		height: 656px;
+	}
+
+	.inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 100%;
+		width: 50vw;
+		margin: 0 auto;
+	}
+
+
+	.header-profile-picture-container {
+		position: relative;
+		display: flex;
+		justify-content: center;
+	}
+
+	#header-profile-picture {
+		height: 328px;
+		z-index: 2;
+	}
+
+	#header-profile-picture-background {
+		border: solid 2px whitesmoke;
+		height: 328px;
+		width: 328px;
+		position: absolute;
+		top: 35px;
+		left: 35px;
+		z-index: 1;
 	}
 
 		#header a {
@@ -3102,7 +3133,7 @@ input, select, textarea {
 			-webkit-transition: opacity 1s ease;
 			-ms-transition: opacity 1s ease;
 			transition: opacity 1s ease;
-			background-image: linear-gradient(45deg, #292e33, #e9304b);
+			background-image: linear-gradient(90deg, var(--main-black) 65%, var(--main-red) 37%);;
 			content: '';
 			height: 100%;
 			left: 0;
@@ -3132,11 +3163,7 @@ input, select, textarea {
 		opacity: 1;
 	}
 
-	#header #header-profile-picture {
-		height: 200px;
-		/* width: 200px; */
-		border-radius: 50%;
-	}
+
 
 /* About me */
 
