@@ -3274,7 +3274,7 @@ input, select, textarea {
 }
 
 #projects .project-link:hover {
-	color: white;
+	background-color: rgba(255, 255, 255, 0.277);
 	border: 1px solid #fafeff;
 }
 
@@ -3290,6 +3290,14 @@ input, select, textarea {
 	right: 30px;
 }
 
+#projects #lair--bnb-screenshot {
+	bottom: 90px;
+}
+
+#projects #jolly-jingles-screenshot {
+	position: relative;
+	right: 20px;
+}
 
 .projects-container {
 	margin: 0;
@@ -3301,7 +3309,6 @@ input, select, textarea {
 	justify-content: space-between;
 	width: 100%;
 	height: 420px;
-	/* margin-bottom: 32rem; */
 }
 
 .project-info {
@@ -3309,6 +3316,12 @@ input, select, textarea {
 	flex-direction: column;
 	width: 466px;
 	height: 100%;
+}
+
+.project-title {
+	font-family: "Crimson Text";
+	letter-spacing: 1.5px;
+	font-size: 31px;
 }
 
 /* My Skills */
