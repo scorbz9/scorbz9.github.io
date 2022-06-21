@@ -2085,12 +2085,15 @@ input, select, textarea {
 
 	.section-header {
 		font-family: "Crimson Text";
+		font-size: 24px;
+		text-transform: uppercase;
+		letter-spacing: 2px;
 	}
 
 	.section-subtitle {
 		font-family: "Mada";
-		font-size: 21px;
-		margin: 20px 0 50px 0;
+		font-size: 38px;
+		margin: 20px 0 90px 0;
 	}
 
 /* Form */
@@ -3222,6 +3225,11 @@ input, select, textarea {
 	color: #292e33;
 }
 
+#about-me-info {
+	font-family: "Mada";
+	letter-spacing: .5px;
+}
+
 #about-me-projects-link {
 	color: #e9304b;
 }
@@ -3327,7 +3335,8 @@ input, select, textarea {
 /* My Skills */
 
 #my-skills {
-	background-color: rgba(128, 128, 128, 0.234);
+	background-color: var(--main-red);
+
 }
 
 #my-skills-container {
@@ -3335,37 +3344,32 @@ input, select, textarea {
 }
 
 .skill-icon {
-	transform: rotate(-45deg);
-	height: 80px;
-	width: 80px;
-	position: relative;
-	top: 31px;
-	left: 2px;
-	color: white;
+	color: #fafeff;
 }
 
 .skill-name {
 	position: relative;
 	top: 38px;
 	font-weight: bold;
-
+	color: #fafeff;
 	letter-spacing: 2px;
 }
 
 .my-skills-header {
 	font-weight: bold;
-	color: black;
-	margin-bottom: 20px;
-	font-size: 42px;
+	color: #fafeff;
 }
 
+.my-skills-subtitle {
+	color: #fafeff;
+}
 
 /* Footer */
 
 	#footer {
 		padding: 3em 0 3em 0 ;
-		background-color: #292e33;
-		color: rgba(255, 255, 255, 0.75);
+		background-color: var(--main-black);
+		color: #cdcdcd;
 		background-attachment: fixed,							fixed,							fixed;
 		/* background-image: url("images/overlay2.png"), url("images/overlay4.svg"), linear-gradient(45deg, #292e33, #e9304b 70%, #e9304b 95%); */
 		background-position: top left,						center center,					center center;
