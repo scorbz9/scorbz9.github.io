@@ -1,5 +1,7 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic");
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Madat&display=swap');
 
 /*
 	Photon by HTML5 UP
@@ -2081,6 +2083,13 @@ input, select, textarea {
 		text-align: center;
 	}
 
+	.section-header {
+		font-family: "Crimson Text";
+	}
+
+	.section-subtitle {
+		font-family: "Mada";
+	}
 
 /* Form */
 
@@ -2606,14 +2615,26 @@ input, select, textarea {
 
 	ul.major-icons {
 		list-style: none;
-		padding-left: 0;
-		margin-left: 80px;
+		padding: 0;
+		text-align: center;
+		margin-bottom: 3rem;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
 	}
 
 		ul.major-icons li {
 			display: inline-block;
-			padding: 2.5em;
 			text-align: center;
+			font-size: 75px;
+			padding: 0 10px;
+			margin-bottom: 20px;
 		}
 
 			ul.major-icons li .icon {
@@ -3215,7 +3236,7 @@ input, select, textarea {
 /* Projects */
 
 #projects {
-	background-color: #292e33;
+	background-color: var(--main-black);
 	color: #fafeff;
 }
 
@@ -3245,8 +3266,12 @@ input, select, textarea {
 
 /* My Skills */
 
-.my-skills {
-	background-color: #fafeff;
+#my-skills {
+	background-color: rgba(128, 128, 128, 0.234);
+}
+
+#my-skills-container {
+	max-width: 1036.95px;
 }
 
 .skill-icon {
@@ -3256,21 +3281,28 @@ input, select, textarea {
 	position: relative;
 	top: 31px;
 	left: 2px;
+	color: white;
 }
 
 .skill-name {
 	position: relative;
 	top: 38px;
 	font-weight: bold;
+
 	letter-spacing: 2px;
 }
 
 .my-skills-header {
-	display: flex;
-	justify-content: center;
-	padding-bottom: 30px;
-	border-bottom: 1px solid #fafeff;
 	font-weight: bold;
+	color: black;
+	margin-bottom: 20px;
+	font-size: 42px;
+}
+
+#my-skills h3 {
+	font-size: 21px;
+
+	margin: 20px 0 50px 0;
 }
 
 /* Footer */
