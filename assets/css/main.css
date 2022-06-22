@@ -2063,7 +2063,7 @@ input, select, textarea {
 	}
 
 		header.major:after {
-			background: rgba(144, 144, 144, 0.5);
+			background: var(--main-mid-gray);
 			content: '';
 			display: inline-block;
 			height: 1px;
@@ -3047,7 +3047,7 @@ input, select, textarea {
 			#header input[type="button"]:hover,
 			#header button:hover,
 			#header .button:hover {
-				background-color: rgba(255, 255, 255, 0.125);
+				background-color: rgba(255, 255, 255, 0.277);
 			}
 
 			#header input[type="submit"]:active,
@@ -3227,13 +3227,18 @@ input, select, textarea {
 
 /* About me */
 
+#about-me {
+	background-color: var(--main-white);
+}
+
 .about-me-header {
-	color: #292e33;
+	color: var(--main-black);
 }
 
 #about-me-info {
 	font-family: "Mada";
 	letter-spacing: .5px;
+	color: var(--main-black);
 }
 
 #about-me-projects-link {
@@ -3347,11 +3352,12 @@ input, select, textarea {
 
 #my-skills-container {
 	max-width: 1036.95px;
+	margin: 0 auto;
 }
 
 .skill-container {
 	width: 115px;
-	margin-right: 10px;
+	margin-right: 14.5px;
 	padding: 0;
 }
 
