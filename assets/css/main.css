@@ -11,7 +11,11 @@
 
 :root {
 	--main-black: rgba(17,17,17,255);
-	--main-red: #731010;
+	--main-red: #6F1D1B;
+	--main-white: #FFFFFF;
+	--main-light-gray: #D2D7DF;
+	--main-11-gray: #BDBBB0;
+	--main-mid-gray: #8A897C;
 }
 
 html, body, div, span, applet, object,
@@ -2638,7 +2642,6 @@ input, select, textarea {
 			display: inline-block;
 			text-align: center;
 			font-size: 75px;
-			padding: 0 10px;
 			margin-bottom: 20px;
 		}
 
@@ -2877,7 +2880,6 @@ input, select, textarea {
 			background-color: rgba(51, 51, 51, 0.911);
 			color: rgba(255, 255, 255, 0.75);
 			background-attachment: fixed,							fixed;
-			/* background-image: url("images/overlay1.png"), url("../../images/header.jpg"); */
 			background-size: auto,							cover;
 		}
 
@@ -2965,8 +2967,8 @@ input, select, textarea {
 
 	#header {
 		padding: 9em 0 9em 0 ;
-		color: rgba(255, 255, 255, 0.75);
-		background-image: linear-gradient(90deg, var(--main-black) 65%, var(--main-red) 37%);
+		color: var(--main-light-gray);
+		background-image: linear-gradient(90deg, var(--main-red) 65%, var(--main-black) 37%);
 		overflow: hidden;
 		position: relative;
 		height: 656px;
@@ -3005,6 +3007,10 @@ input, select, textarea {
 		top: 35px;
 		left: 35px;
 		z-index: 1;
+	}
+
+	#name-accent {
+		color: var(--main-red);
 	}
 
 		#header a {
@@ -3179,7 +3185,7 @@ input, select, textarea {
 			-webkit-transition: opacity 1s ease;
 			-ms-transition: opacity 1s ease;
 			transition: opacity 1s ease;
-			background-image: linear-gradient(90deg, var(--main-black) 65%, var(--main-red) 37%);;
+			background-image: linear-gradient(90deg, var(--main-red) 65%, var(--main-black) 37%);
 			content: '';
 			height: 100%;
 			left: 0;
@@ -3343,25 +3349,30 @@ input, select, textarea {
 	max-width: 1036.95px;
 }
 
+.skill-container {
+	width: 115px;
+	margin-right: 10px;
+	padding: 0;
+}
+
 .skill-icon {
-	color: #fafeff;
+	color: var(--main-white);
+	margin-bottom: 1.5rem;
 }
 
 .skill-name {
-	position: relative;
-	top: 38px;
-	font-weight: bold;
-	color: #fafeff;
-	letter-spacing: 2px;
+	font-size: 20px;
+	color: var(--main-white);
 }
 
 .my-skills-header {
 	font-weight: bold;
-	color: #fafeff;
+	color: var(--main-white);
 }
 
 .my-skills-subtitle {
-	color: #fafeff;
+	color: var(--main-white);
+	margin-bottom: 70px;
 }
 
 /* Footer */
