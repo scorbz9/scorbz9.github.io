@@ -3231,11 +3231,26 @@ input, select, textarea {
 	background-color: var(--main-white);
 }
 
+#about-me .container {
+	width: 1300px;
+	padding: 0 100px;
+}
+
+#about-me-container {
+	display: flex;
+	justify-content: space-between;
+}
+
 .about-me-header {
 	color: var(--main-black);
 }
 
-#about-me-info {
+.about-me-info-container {
+	flex-direction: column;
+	width: 50%;
+}
+
+.about-me-info {
 	font-family: "Mada";
 	letter-spacing: .5px;
 	color: var(--main-black);
@@ -3249,9 +3264,14 @@ input, select, textarea {
 	text-decoration: underline;
 }
 
-.about-me-image {
+#about-me-image {
 	height: 304px;
 	width: 532px;
+	position: relative;
+	left: 50px;
+	bottom: 10px;
+	border-radius: 2px;
+	box-shadow: 0 0 10px black;
 }
 
 /* Projects */
